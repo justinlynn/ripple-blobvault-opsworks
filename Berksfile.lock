@@ -1,0 +1,26 @@
+DEPENDENCIES
+  application_nodejs
+    git: https://github.com/ripple/cookbook-application_nodejs.git
+    revision: eea4608125b87b9050eb54e037756df91d0a72bd
+    branch: develop
+  ripple-blobvault
+    git: https://github.com/justinlynn/ripple-blobvault.git
+    revision: c62b8a2a5344516d359a602175bcded4df886162
+    branch: master
+    rel: env/chef/cookbooks/ripple-blobvault
+
+GRAPH
+  application (4.1.4)
+  application_nodejs (2.0.1)
+    application (>= 0.0.0)
+    nodejs (>= 0.0.0)
+  apt (2.3.8)
+  build-essential (2.0.0)
+  nodejs (1.3.0)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    yum (>= 0.0.0)
+  ripple-blobvault (0.0.1)
+    application_nodejs (>= 0.0.0)
+    nodejs (>= 0.0.0)
+  yum (3.2.0)

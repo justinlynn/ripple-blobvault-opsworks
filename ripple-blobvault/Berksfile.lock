@@ -1,0 +1,36 @@
+{
+  "sources": {
+    "ripple-blobvault": {
+      "path": "."
+    },
+    "application_nodejs": {
+      "locked_version": "2.0.1",
+      "git": "https://github.com/ripple/cookbook-application_nodejs.git",
+      "ref": "5c0722631ebc0dfbefc1dc6f76113d1fc4bbb795"
+    },
+    "apt": {
+      "locked_version": "2.3.4"
+    },
+    "yum": {
+      "locked_version": "3.0.4"
+    },
+    "minitest-handler": {
+      "locked_version": "1.1.4"
+    },
+    "ripple-blobvault-test": {
+      "path": "./test/cookbook"
+    },
+    "nodejs": {
+      "locked_version": "1.3.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.2"
+    },
+    "application": {
+      "locked_version": "4.1.4"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    }
+  }
+}

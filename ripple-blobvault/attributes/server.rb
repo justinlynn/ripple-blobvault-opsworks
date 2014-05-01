@@ -3,6 +3,10 @@ default['ripple']['blobvault']['server']['port'] = 5993
 default['ripple']['blobvault']['server']['url'] = "http://localhost"
 default['ripple']['blobvault']['server']['ssl'] = false
 default['ripple']['blobvault']['server']['is_proxy'] = false
+default['ripple']['blobvault']['server']['quota'] = 1024
+default['ripple']['blobvault']['server']['patchsize'] = 1
+default['ripple']['blobvault']['server']['testmode'] = false
+default['ripple']['blobvault']['server']['nolimit_date'] = 'Thu May 1 2014'
 default['ripple']['blobvault']['server']['url_prefix'] = ''
 
 default['ripple']['blobvault']['server']['repository'] = 'git://github.com/ripple/ripple-blobvault.git'

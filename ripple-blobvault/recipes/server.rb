@@ -38,6 +38,10 @@ application "ripple-blobvault" do
           :url => configuration['url'],
           :ssl => configuration['ssl'],
           :is_proxy => configuration['is_proxy'],
+          :quota => configuration['quota'],
+          :patchsize => configuration['patchsize'],
+          :testmode => configuration['testmode'],
+          :nolimit_date => configuration['nolimit_date'],
           :dbtype => database_configuration['type'],
           :database => {
               database_configuration['type'] => {

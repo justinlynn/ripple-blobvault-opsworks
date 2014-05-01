@@ -53,6 +53,16 @@ application "ripple-blobvault" do
                   :charset => database_configuration['charset']
               }
           },
+          :ripplelib => {
+            :trusted => true,
+            :servers => [
+              {
+                :host => 's1.ripple.com',
+                :port => 443,
+                :secure => false
+              }
+            ]
+          },
           :email => {
               :user => email_configuration['user'],
               :password => email_configuration['pass'],

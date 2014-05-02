@@ -26,6 +26,13 @@ application "ripple-blobvault" do
 
     execute "npm install forever -g"
 
+    cookbook_file "/srv/ripple-blobvault/shared/reserved.json" do
+      source "reserved.json"
+      owner 'root'
+      group 'www-data'
+      mode '0644'
+    end
+
     template "/srv/ripple-blobvault/shared/config.js" do
       source 'config.js.erb'
       owner 'root'
@@ -86,6 +93,7 @@ application "ripple-blobvault" do
   end
 
   symlinks({
+    "reserved.json" => "reserved.json",
     "config.js" => "config.js"
   })
 end

@@ -38,5 +38,3 @@ default['ripple']['blobvault']['server']['email']['port'] = 25
 default['ripple']['blobvault']['server']['email']['user'] = ''
 default['ripple']['blobvault']['server']['email']['pass'] = ''
 default['ripple']['blobvault']['server']['email']['from'] = 'localhost-dev@localhost'
-
-default['ripple']['blobvault']['server']['reserved'] = {}

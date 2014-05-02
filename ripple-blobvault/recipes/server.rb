@@ -84,7 +84,6 @@ application "ripple-blobvault" do
               :modulus => pakdf_configuration['modulus'],
               :alpha => pakdf_configuration['alpha']
           },
-          :reserved => configuration['reserved'],
           :AUTHINFO_VERSION => authinfo_configuration['version']
         }
       })

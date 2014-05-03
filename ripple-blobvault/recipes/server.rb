@@ -49,6 +49,7 @@ application "ripple-blobvault" do
           :patchsize => configuration['patchsize'],
           :testmode => configuration['testmode'],
           :nolimit_date => configuration['nolimit_date'],
+          :username_length => configuration['username_length'],
           :dbtype => database_configuration['type'],
           :database => {
               database_configuration['type'] => {

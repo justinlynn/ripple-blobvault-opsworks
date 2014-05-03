@@ -8,6 +8,7 @@ default['ripple']['blobvault']['server']['patchsize'] = 1
 default['ripple']['blobvault']['server']['testmode'] = false
 default['ripple']['blobvault']['server']['nolimit_date'] = 'Thu May 1 2014'
 default['ripple']['blobvault']['server']['url_prefix'] = ''
+default['ripple']['blobvault']['server']['username_length'] = 20
 
 default['ripple']['blobvault']['server']['repository'] = 'git://github.com/ripple/ripple-blobvault.git'
 default['ripple']['blobvault']['server']['revision'] = 'master'

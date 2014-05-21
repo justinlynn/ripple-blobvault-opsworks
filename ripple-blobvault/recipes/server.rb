@@ -85,7 +85,11 @@ application "ripple-blobvault" do
               :modulus => pakdf_configuration['modulus'],
               :alpha => pakdf_configuration['alpha']
           },
-          :AUTHINFO_VERSION => authinfo_configuration['version']
+          :AUTHINFO_VERSION => authinfo_configuration['version'],
+          :schedule => {
+              :hour => 8,
+              :minute => 0
+          }
         }
       })
     end
